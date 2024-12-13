@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  calc:
+    image: calc
+    build: .
+    environment:
+      - CALC_PORT=6767
+    ports:
+      - "6767:6767"
